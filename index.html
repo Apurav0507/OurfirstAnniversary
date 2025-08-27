@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary My Luv! 💕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            animation: backgroundShift 15s ease-in-out infinite;
+        }
+
+        @keyframes backgroundShift {
+            0%, 100% { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%); }
+            33% { background: linear-gradient(135deg, #fecfef 0%, #ff9a9e 50%, #a8edea 100%); }
+            66% { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 50%, #ff9a9e 100%); }
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            animation: bounce 3s ease-in-out infinite;
+        }
+
+        .header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4.5rem;
+            margin-bottom: 15px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+            background: linear-gradient(45deg, #fff, #ffb3d9, #fff, #87ceeb);
+            background-size: 400% 400%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientShift 4s ease-in-out infinite;
+        }
+
+        .header .subtitle {
+            font-size: 1.8rem;
+            color: #fff0f5;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .header .time-summary {
+            font-size: 1.4rem;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            opacity: 0.9;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-12px); }
+            60% { transform: translateY(-6px); }
+        }
+
+        .live-counter {
+            background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,182,193,0.35));
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 40px;
+            border: 3px solid rgba(255,255,255,0.4);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            animation: pulseGlow 4s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { transform: scale(1); box-shadow: 0 15px 35px rgba(0,0,0,0.2); }
+            50% { transform: scale(1.02); box-shadow: 0 25px 50px rgba(255,20,147,0.4); }
+        }
+
+        .counter-title {
+            color: #8b0000;
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(255,255,255,0.5);
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .counter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .counter-item {
+            background: linear-gradient(135deg, #ff1493, #ff69b4, #87ceeb);
+            border-radius: 25px;
+            padding: 25px;
+            color: white;
+            transform: rotate(-2deg);
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 25px rgba(255,20,147,0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .counter-item::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            animation: shimmer 3s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        .counter-item:nth-child(even) {
+            transform: rotate(2deg);
+        }
+
+        .counter-item:hover {
+            transform: rotate(0deg) scale(1.08);
+            box-shadow: 0 15px 35px rgba(255,20,147,0.6);
+        }
+
+        .counter-number {
+            font-size: 3.2rem;
+            font-weight: bold;
+            display: block;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .counter-label {
+            font-size: 1.1rem;
+            margin-top: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .timeline-section {
+            background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,182,193,0.4));
+            backdrop-filter: blur(25px);
+            border-radius: 30px;
+            padding: 40px;
+            margin: 40px 0;
+            border: 3px solid rgba(255,255,255,0.4);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .timeline-title {
+            color: #8b0000;
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 40px;
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 1px 1px 3px rgba(255,255,255,0.5);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: linear-gradient(to bottom, #ff1493, #ff69b4, #87ceeb);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            padding: 15px 40px;
+            position: relative;
+            background: inherit;
+            width: 50%;
+            animation: slideIn 0.8s ease-out;
+        }
+
+        @keyframes slideIn {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background: linear-gradient(45deg, #ff1493, #87ceeb);
+            border: 3px solid white;
+            top: 25px;
+            border-radius: 50%;
+            z-index: 1;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-item:nth-child(even)::after {
+            left: -10px;
+        }
+
+        .timeline-content {
+            padding: 25px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,182,193,0.3));
+            position: relative;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            border: 2px solid rgba(255,105,180,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 30px rgba(255,20,147,0.3);
+        }
+
+        .timeline-date {
+            font-size: 1.2rem;
+            color: #ff1493;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: inline-block;
+            background: rgba(255,255,255,0.8);
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+
+        .timeline-text {
+            color: #8b0000;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        .notes-section {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px dashed rgba(255,105,180,0.4);
+        }
+
+        .note-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid rgba(255,105,180,0.4);
+            border-radius: 15px;
+            background: rgba(255,255,255,0.7);
+            color: #8b0000;
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            resize: vertical;
+            min-height: 60px;
+        }
+
+        .save-note-btn {
+            background: linear-gradient(45deg, #ff1493, #87ceeb);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .save-note-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255,20,147,0.4);
+        }
+
+        .saved-notes {
+            margin-top: 15px;
+        }
+
+        .saved-note {
+            background: rgba(255,255,255,0.6);
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 12px;
+            border-left: 4px solid #ff1493;
+            font-size: 0.9rem;
+            color: #8b0000;
+        }
+
+        .quote-section {
+            background: linear-gradient(135deg, rgba(255,255,255,0.35), rgba(255,182,193,0.4));
+            backdrop-filter: blur(25px);
+            border-radius: 35px;
+            padding: 50px;
+            text-align: center;
+            border: 3px solid rgba(255,255,255,0.5);
+            margin: 50px 0;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            animation: quoteGlow 6s ease-in-out infinite;
+        }
+
+        @keyframes quoteGlow {
+            0%, 100% { box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+            50% { box-shadow: 0 30px 60px rgba(255,20,147,0.5); }
+        }
+
+        .quote-text {
+            font-size: 2rem;
+            color: #8b0000;
+            font-style: italic;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            font-weight: 600;
+            text-shadow: 1px 1px 3px rgba(255,255,255,0.6);
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .polaroid-gallery {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .gallery-title {
+            color: #8b0000;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 1px 1px 3px rgba(255,255,255,0.5);
+        }
+
+        .polaroid-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .polaroid {
+            background: white;
+            padding: 15px 15px 50px 15px;
+            border-radius: 5px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transform: rotate(-2deg);
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+
+        .polaroid:nth-child(even) {
+            transform: rotate(2deg);
+        }
+
+        .polaroid:hover {
+            transform: rotate(0deg) scale(1.05);
+            box-shadow: 0 15px 40px rgba(255,20,147,0.4);
+        }
+
+        .polaroid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+
+        .polaroid-caption {
+            text-align: center;
+            color: #8b0000;
+            font-size: 1rem;
+            margin-top: 15px;
+            font-family: 'Dancing Script', cursive;
+            font-weight: bold;
+        }
+
+        .music-controls {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(45deg, #ff1493, #87ceeb);
+            border-radius: 50px;
+            padding: 15px 25px;
+            box-shadow: 0 10px 25px rgba(255,20,147,0.4);
+            z-index: 1000;
+        }
+
+        .music-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .music-btn:hover {
+            transform: scale(1.2);
+        }
+
+        .floating-emojis {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .emoji {
+            position: absolute;
+            font-size: 35px;
+            animation: floatUp 10s linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% {
+                opacity: 0;
+                transform: translateY(100vh) rotate(0deg);
+            }
+            10%, 90% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-10vh) rotate(720deg);
+            }
+        }
+
+        .secret-message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(135deg, #ff1493, #87ceeb);
+            color: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            z-index: 2000;
+            display: none;
+            text-align: center;
+            max-width: 400px;
+            animation: messagePopIn 0.6s ease-out;
+        }
+
+        @keyframes messagePopIn {
+            0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+            100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+        }
+
+        .heart-unlock {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 2rem;
+            cursor: pointer;
+            animation: heartbeat 2s ease-in-out infinite;
+            z-index: 1000;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        .download-btn {
+            background: linear-gradient(45deg, #ff1493, #87ceeb);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 20px auto;
+            display: block;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(255,20,147,0.4);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 { font-size: 3rem; }
+            .header .subtitle { font-size: 1.4rem; }
+            .header .time-summary { font-size: 1.1rem; }
+            .timeline::after { left: 31px; }
+            .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
+            .timeline-item::after { left: 21px; }
+            .timeline-item:nth-child(even) { left: 0%; }
+            .timeline-item:nth-child(even)::after { left: 21px; }
+            .counter-grid { grid-template-columns: repeat(2, 1fr); }
+            .quote-text { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-emojis" id="floating-emojis"></div>
+    <div class="heart-unlock" onclick="showSecretMessage()">💖</div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Happy Anniversary My Luv 💕</h1>
+            <div class="subtitle">One amazing year of craziness and baddieness</div>
+            <div class="time-summary">It has been <span id="totalHours">8760</span> hours ⏳, <span id="totalMinutes">525600</span> minutes 🕰️, and for love ♾️ infinity</div>
+        </div>
+
+        <div class="live-counter">
+            <div class="counter-title">💖 Our Love Counter 💖</div>
+            <div class="counter-grid">
+                <div class="counter-item">
+                    <span class="counter-number" id="liveDays">365</span>
+                    <span class="counter-label">📅 Days</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-number" id="liveHours">8760</span>
+                    <span class="counter-label">⏰ Hours</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-number" id="liveMinutes">525600</span>
+                    <span class="counter-label">⏱️ Minutes</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-number">∞</span>
+                    <span class="counter-label">💖 Love</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-section">
+            <h2 class="timeline-title">🌟 Our Amazing Journey 🌟</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">23rd July 2024 💫</div>
+                        <div class="timeline-text">The day it all started - destiny brought us together!</div>
+                        <div class="notes-section">
+                            <textarea class="note-input" placeholder="Add your special memory here..." data-milestone="start"></textarea>
+                            <button class="save-note-btn" onclick="saveNote('start')">Save Memory</button>
+                            <div class="saved-notes" id="notes-start"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">28th July 2024 💋</div>
+                        <div class="timeline-text">Our first kiss - the moment that changed everything forever</div>
+                        <div class="notes-section">
+                            <textarea class="note-input" placeholder="Add your special memory here..." data-milestone="first-kiss"></textarea>
+                            <button class="save-note-btn" onclick="saveNote('first-kiss')">Save Memory</button>
+                            <div class="saved-notes" id="notes-first-kiss"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">29th August 2024 ❤️</div>
+                        <div class="timeline-text">The day we said I love you... the day of my life I bagged you, baddie 🫶</div>
+                        <div class="notes-section">
+                            <textarea class="note-input" placeholder="Add your special memory here..." data-milestone="i-love-you"></textarea>
+                            <button class="save-note-btn" onclick="saveNote('i-love-you')">Save Memory</button>
+                            <div class="saved-notes" id="notes-i-love-you"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">First Stay Over 🏠</div>
+                        <div class="timeline-text">Our first night together - feeling so safe and loved</div>
+                        <div class="notes-section">
+                            <textarea class="note-input" placeholder="Add your special memory here..." data-milestone="first-stay"></textarea>
+                            <button class="save-note-btn" onclick="saveNote('first-stay')">Save Memory</button>
+                            <div class="saved-notes" id="notes-first-stay"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">First Valentine's 🌹</div>
+                        <div class="timeline-text">Our magical Valentine's Day celebration</div>
+                        <div class="notes-section">
+                            <textarea class="note-input" placeholder="Add your special memory here..." data-milestone="valentine"></textarea>
+                            <button class="save-note-btn" onclick="saveNote('valentine')">Save Memory</button>
+                            <div class="saved-notes" id="notes-valentine"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">The Party 🎉</div>
+                        <div class="timeline-text">That amazing party where we had so much fun together</div>
+                        <div class="notes-section">
+                            <textarea class="note-input" placeholder="Add your special memory here..." data-milestone="party"></textarea>
+                            <button class="save-note-btn" onclick="saveNote('party')">Save Memory</button>
+                            <div class="saved-notes" id="notes-party"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">The Adventure 🌍</div>
+                        <div class="timeline-text">Our incredible adventure that brought us even closer</div>
+                        <div class="notes-section">
+                            <textarea class="note-input" placeholder="Add your special memory here..." data-milestone="adventure"></textarea>
+                            <button class="save-note-btn" onclick="saveNote('adventure')">Save Memory</button>
+                            <div class="saved-notes" id="notes-adventure"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">The Laughs 😂</div>
+                        <div class="timeline-text">All those moments when we couldn't stop laughing</div>
+                        <div class="notes-section">
+                            <textarea class="note-input" placeholder="Add your special memory here..." data-milestone="laughs"></textarea>
+                            <button class="save-note-btn" onclick="saveNote('laughs')">Save Memory</button>
+                            <div class="saved-notes" id="notes-laughs"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">The Talks 🌙</div>
+                        <div class="timeline-text">Those deep conversations that connected our souls</div>
+                        <div class="notes-section">
+                            <textarea class="note-input" placeholder="Add your special memory here..." data-milestone="talks"></textarea>
+                            <button class="save-note-btn" onclick="saveNote('talks')">Save Memory</button>
+                            <div class="saved-notes" id="notes-talks"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quote-section">
+            <div class="quote-text">
+                "You understand me so well and I feel so safe with you. 365 days ago I started loving you, and today I love you 365 times more— every day for something new, something different, and something forever." 💖
+            </div>
+        </div>
+
+        <div class="polaroid-gallery">
+            <h2 class="gallery-title">📸 Our Polaroid Memories 📸</h2>
+            <div class="polaroid-grid" id="polaroid-grid">
+                <!-- Polaroids will be added here by JavaScript -->
+            </div>
+        </div>
+
+        <button class="download-btn" onclick="downloadLoveJournal()">
+            💌 Download Our Love Journal PDF 💌
+        </button>
+    </div>
+
+    <div class="music-controls">
+        <button class="music-btn" onclick="toggleMusic()" id="musicBtn">🎵</button>
+    </div>
+
+    <div class="secret-message" id="secretMessage">
+        <h3>💖 Secret Message in a Bottle 💖</h3>
+        <p>"Every day with you feels like discovering a new constellation of happiness. You're my favorite adventure, my safest harbor, and my greatest love story. Here's to forever being crazy and baddie together! 🌟💕"</p>
+        <button onclick="closeSecretMessage()" style="background: white; color: #ff1493; border: none; padding: 10px 20px; border-radius: 15px; margin-top: 15px; cursor: pointer; font-weight: bold;">Close 💖</button>
+    </div>
+
+    <audio id="backgroundMusic" loop>
+        <!-- You would add your audio source here -->
+        <!-- <source src="until-i-found-you.mp3" type="audio/mpeg"> -->
+    </audio>
+
+    <script>
+        // Enhanced floating emojis with more variety
+        const emojis = ['💕', '💖', '💗', '💘', '💙', '💜', '🤍', '❤️', '🧡', '💛', '💚', '💙', '💜', '🤎', '🖤', '🤍', '💋', '🌹', '🌺', '🌸', '🌼', '🌻', '🦋', '✨', '⭐', '🌟', '💫', '🎀', '🎈', '🎉', '🎊', '🥰', '😍', '🤩', '😘', '🏃‍♀️', '🏃‍♂️', '🎭', '🎪', '🎨', '🎬', '📸', '🗺️', '🏠', '🌙', '☀️', '🌈'];
+
+        // Create enhanced floating emojis
+        function createFloatingEmoji() {
+            const emoji = document.createElement('div');
+            emoji.className = 'emoji';
+            emoji.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+            emoji.style.left = Math.random() * 100 + 'vw';
+            emoji.style.animationDelay = Math.random() * 2 + 's';
+            emoji.style.animationDuration = (Math.random() * 4 + 8) + 's';
+            document.getElementById('floating-emojis').appendChild(emoji);
+
+            setTimeout(() => {
+                if (emoji.parentNode) {
+                    emoji.remove();
+                }
+            }, 12000);
+        }
+
+        // Create emojis more frequently for extra magic
+        setInterval(createFloatingEmoji, 600);
+
+        // Live counter functionality
+        function updateLiveCounter() {
+            const startDate = new Date('2024-07-29'); // Your "I love you" date
+            const now = new Date();
+            const timeDiff = now - startDate;
+            
+            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor(timeDiff / (1000 * 60 * 60));
+            const minutes = Math.floor(timeDiff / (1000 * 60));
+            
+            document.getElementById('liveDays').textContent = days;
+            document.getElementById('liveHours').textContent = hours.toLocaleString();
+            document.getElementById('liveMinutes').textContent = minutes.toLocaleString();
+            document.getElementById('totalHours').textContent = hours.toLocaleString();
+            document.getElementById('totalMinutes').textContent = minutes.toLocaleString();
+        }
+
+        // Update counter every minute
+        updateLiveCounter();
+        setInterval(updateLiveCounter, 60000);
+
+        // Notes functionality
+        let savedNotes = JSON.parse(localStorage.getItem('anniversaryNotes') || '{}');
+
+        function saveNote(milestone) {
+            const textarea = document.querySelector(`textarea[data-milestone="${milestone}"]`);
+            const noteText = textarea.value.trim();
+            
+            if (noteText) {
+                if (!savedNotes[milestone]) {
+                    savedNotes[milestone] = [];
+                }
+                
+                savedNotes[milestone].push({
+                    text: noteText,
+                    date: new Date().toLocaleDateString(),
+                    time: new Date().toLocaleTimeString()
+                });
+                
+                localStorage.setItem('anniversaryNotes', JSON.stringify(savedNotes));
+                textarea.value = '';
+                displayNotes(milestone);
+                
+                // Success animation
+                const btn = textarea.nextElementSibling;
+                btn.textContent = 'Saved! 💖';
+                btn.style.background = 'linear-gradient(45deg, #4CAF50, #45a049)';
+                setTimeout(() => {
+                    btn.textContent = 'Save Memory';
+                    btn.style.background = 'linear-gradient(45deg, #ff1493, #87ceeb)';
+                }, 2000);
+            }
+        }
+
+        function displayNotes(milestone) {
+            const container = document.getElementById(`notes-${milestone}`);
+            if (savedNotes[milestone]) {
+                container.innerHTML = savedNotes[milestone].map(note => 
+                    `<div class="saved-note">
+                        <div style="font-size: 0.8rem; color: #ff1493; margin-bottom: 5px;">
+                            ${note.date} at ${note.time}
+                        </div>
+                        ${note.text}
+                    </div>`
+                ).join('');
+            }
+        }
+
+        // Load saved notes on page load
+        Object.keys(savedNotes).forEach(milestone => {
+            displayNotes(milestone);
+        });
+
+        // Music functionality
+        let musicPlaying = false;
+        function toggleMusic() {
+            const music = document.getElementById('backgroundMusic');
+            const btn = document.getElementById('musicBtn');
+            
+            if (musicPlaying) {
+                music.pause();
+                btn.textContent = '🎵';
+                musicPlaying = false;
+            } else {
+                music.play().catch(e => console.log('Music play failed:', e));
+                btn.textContent = '🎵';
+                musicPlaying = true;
+            }
+        }
+
+        // Secret message functionality
+        function showSecretMessage() {
+            document.getElementById('secretMessage').style.display = 'block';
+            // Add sparkle effects
+            for (let i = 0; i < 20; i++) {
+                setTimeout(() => createClickEffect(Math.random() * window.innerWidth, Math.random() * window.innerHeight), i * 100);
+            }
+        }
+
+        function closeSecretMessage() {
+            document.getElementById('secretMessage').style.display = 'none';
+        }
+
+        // Download functionality (simplified - in real implementation you'd need a PDF library)
+        function downloadLoveJournal() {
+            let journalContent = "OUR LOVE JOURNAL 💖\n\n";
+            journalContent += "Anniversary: One Amazing Year! 🎉\n\n";
+            
+            Object.keys(savedNotes).forEach(milestone => {
+                journalContent += `${milestone.toUpperCase()}:\n`;
+                savedNotes[milestone].forEach(note => {
+                    journalContent += `• ${note.text} (${note.date})\n`;
+                });
+                journalContent += "\n";
+            });
+            
+            const blob = new Blob([journalContent], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Our_Love_Journal.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+
+        // Click effects
+        function createClickEffect(x, y) {
+            const effects = ['💖', '✨', '🌟', '💫', '🎉', '💕', '🌹', '🦋'];
+            const effect = document.createElement('div');
+            effect.innerHTML = effects[Math.floor(Math.random() * effects.length)];
+            effect.style.position = 'fixed';
+            effect.style.left = x + 'px';
+            effect.style.top = y + 'px';
+            effect.style.pointerEvents = 'none';
+            effect.style.zIndex = '1000';
+            effect.style.fontSize = '2rem';
+            effect.style.animation = 'clickEffect 1.5s ease-out forwards';
+            document.body.appendChild(effect);
+
+            setTimeout(() => effect.remove(), 1500);
+        }
+
+        document.addEventListener('click', (e) => {
+            createClickEffect(e.clientX, e.clientY);
+        });
+
+        // Add click effect animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes clickEffect {
+                0% { transform: scale(0) rotate(0deg); opacity: 1; }
+                50% { transform: scale(1.5) rotate(180deg); opacity: 1; }
+                100% { transform: scale(0) rotate(360deg); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Add some sample polaroids (you can replace with your actual images)
+        const samplePolaroids = [
+            { caption: "Our first selfie together 📱💕", alt: "First selfie" },
+            { caption: "That crazy adventure day 🌟", alt: "Adventure" },
+            { caption: "Sleepy morning cuddles ☀️", alt: "Morning" },
+            { caption: "Date night magic ✨", alt: "Date night" },
+            { caption: "Just being us 💖", alt: "Being us" },
+            { caption: "Forever and always 🌙", alt: "Forever" }
+        ];
+
+        // You would replace this with your actual image loading logic
+        function loadPolaroids() {
+            const grid = document.getElementById('polaroid-grid');
+            samplePolaroids.forEach((photo, index) => {
+                const polaroid = document.createElement('div');
+                polaroid.className = 'polaroid';
+                polaroid.innerHTML = `
+                    <div style="width: 100%; height: 200px; background: linear-gradient(45deg, #ff9a9e, #fecfef); border-radius: 3px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                        Add Your Photo Here 📸
+                    </div>
+                    <div class="polaroid-caption">${photo.caption}</div>
+                `;
+                grid.appendChild(polaroid);
+            });
+        }
+
+        // Initialize polaroids
+        loadPolaroids();
+
+        // Auto-animate timeline items on scroll
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe timeline items
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(50px)';
+            item.style.transition = 'all 0.8s ease-out';
+            observer.observe(item);
+        });
+    </script>
+</body>
+</html>
