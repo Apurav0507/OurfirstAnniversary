@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary My Luv, Sneha💕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            animation: backgroundShift 15s ease-in-out infinite;
+        }
+
+        @keyframes backgroundShift {
+            0%, 100% { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%); }
+            33% { background: linear-gradient(135deg, #fecfef 0%, #ff9a9e 50%, #a8edea 100%); }
+            66% { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 50%, #ff9a9e 100%); }
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            animation: bounce 3s ease-in-out infinite;
+        }
+
+        .header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4.5rem;
+            margin-bottom: 15px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+            background: linear-gradient(45deg, #fff, #ffb3d9, #fff, #87ceeb);
+            background-size: 400% 400%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientShift 4s ease-in-out infinite;
+        }
+
+        .header .subtitle {
+            font-size: 1.8rem;
+            color: #fff0f5;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .header .time-summary {
+            font-size: 1.4rem;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            opacity: 0.9;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-12px); }
+            60% { transform: translateY(-6px); }
+        }
+
+        .live-counter {
+            background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,182,193,0.35));
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 40px;
+            border: 3px solid rgba(255,255,255,0.4);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            animation: pulseGlow 4s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { transform: scale(1); box-shadow: 0 15px 35px rgba(0,0,0,0.2); }
+            50% { transform: scale(1.02); box-shadow: 0 25px 50px rgba(255,20,147,0.4); }
+        }
+
+        .counter-title {
+            color: #8b0000;
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(255,255,255,0.5);
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .counter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .counter-item {
+            background: linear-gradient(135deg, #ff1493, #ff69b4, #87ceeb);
+            border-radius: 25px;
+            padding: 25px;
+            color: white;
+            transform: rotate(-2deg);
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 25px rgba(255,20,147,0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .counter-item::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            animation: shimmer 3s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        .counter-item:nth-child(even) {
+            transform: rotate(2deg);
+        }
+
+        .counter-item:hover {
+            transform: rotate(0deg) scale(1.08);
+            box-shadow: 0 15px 35px rgba(255,20,147,0.6);
+        }
+
+        .counter-number {
+            font-size: 3.2rem;
+            font-weight: bold;
+            display: block;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .counter-label {
+            font-size: 1.1rem;
+            margin-top: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .timeline-section {
+            background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,182,193,0.4));
+            backdrop-filter: blur(25px);
+            border-radius: 30px;
+            padding: 40px;
+            margin: 40px 0;
+            border: 3px solid rgba(255,255,255,0.4);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .timeline-title {
+            color: #8b0000;
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 40px;
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 1px 1px 3px rgba(255,255,255,0.5);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: linear-gradient(to bottom, #ff1493, #ff69b4, #87ceeb);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            padding: 15px 40px;
+            position: relative;
+            background: inherit;
+            width: 50%;
+            animation: slideIn 0.8s ease-out;
+        }
+
+        @keyframes slideIn {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background: linear-gradient(45deg, #ff1493, #87ceeb);
+            border: 3px solid white;
+            top: 25px;
+            border-radius: 50%;
+            z-index: 1;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-item:nth-child(even)::after {
+            left: -10px;
+        }
+
+        .timeline-content {
+            padding: 25px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,182,193,0.3));
+            position: relative;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            border: 2px solid rgba(255,105,180,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 30px rgba(255,20,147,0.3);
+        }
+
+        .timeline-date {
+            font-size: 1.2rem;
+            color: #ff1493;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: inline-block;
+            background: rgba(255,255,255,0.8);
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+
+        .timeline-text {
+            color: #8b0000;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        .notes-section {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px dashed rgba(255,105,180,0.4);
+        }
+
+        .note-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid rgba(255,105,180,0.4);
+            border-radius: 15px;
+            background: rgba(255,255,255,0.7);
+            color: #8b0000;
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            resize: vertical;
+            min-height: 60px;
+        }
+
+        .save-note-btn {
+            background: linear-gradient(45deg, #ff1493, #87ceeb);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .save-note-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255,20,147,0.4);
+        }
+
+        .saved-notes {
+            margin-top: 15px;
+        }
+
+        .saved-note {
+            background: rgba(255,255,255,0.6);
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 12px;
+            border-left: 4px solid #ff1493;
+            font-size: 0.9rem;
+            color: #8b0000;
+        }
+
+        .quote-section {
+            background: linear-gradient(135deg, rgba(255,255,255,0.35), rgba(255,182,193,0.4));
+            backdrop-filter: blur(25px);
+            border-radius: 35px;
+            padding: 50px;
+            text-align: center;
+            border: 3px solid rgba(255,255,255,0.5);
+            margin: 50px 0;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            animation: quoteGlow 6s ease-in-out infinite;
+        }
+
+        @keyframes quoteGlow {
+            0%, 100% { box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+            50% { box-shadow: 0 30px 60px rgba(255,20,147,0.5); }
+        }
+
+        .quote-text {
+            font-size: 2rem;
+            color: #8b0000;
+            font-style: italic;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            font-weight: 600;
+            text-shadow: 1px 1px 3px rgba(255,255,255,0.6);
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .polaroid-gallery {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .gallery-title {
+            color: #8b0000;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 1px 1px 3px rgba(255,255,255,0.5);
+        }
+
+        .polaroid-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .polaroid {
+            background: white;
+            padding: 15px 15px 50px 15px;
+            border-radius: 5px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transform: rotate(-2deg);
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+
+        .polaroid:nth-child(even) {
+            transform: rotate(2deg);
+        }
+
+        .polaroid:hover {
+            transform: rotate(0deg) scale(1.05);
+            box-shadow: 0 15px 40px rgba(255,20,147,0.4);
+        }
+
+        .polaroid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+
+        .polaroid-caption {
+            text-align: center;
+            color: #8b0000;
+            font-size: 1rem;
+            margin-top: 15px;
+            font-family: 'Dancing Script', cursive;
+            font-weight: bold;
+        }
+
+        .music-controls {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(45deg, #ff1493, #87ceeb);
+            border-radius: 50px;
+            padding: 15px 25px;
+            box-shadow: 0 10px 25px rgba(255,20,147,0.4);
+            z-index: 1000;
+        }
+
+        .music-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .music-btn:hover {
+            transform: scale(1.2);
+        }
+
+        .floating-emojis {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .emoji {
+            position: absolute;
+            font-size: 35px;
+            animation: floatUp 10s linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% {
+                opacity: 0;
+                transform: translateY(100vh) rotate(0deg);
+            }
+            10%, 90% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-10vh) rotate(720deg);
+            }
+        }
+
+        .secret-message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(135deg, #ff1493, #87ceeb);
+            color: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            z-index: 2000;
+            display: none;
+            text-align: center;
+            max-width: 400px;
+            animation: messagePopIn 0.6s ease-out;
+        }
+
+        @keyframes messagePopIn {
+            0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+            100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+        }
+
+        .heart-unlock {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 2rem;
+            cursor: pointer;
+            animation: heartbeat 2s ease-in-out infinite;
+            z-index: 1000;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        .bucket-list-section {
+            background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,182,193,0.4));
+            backdrop-filter: blur(25px);
+            border-radius: 30px;
+            padding: 40px;
+            margin: 40px 0;
+            border: 3px solid rgba(255,255,255,0.4);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .bucket-list-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .bucket-list-input-section {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .bucket-item-input {
+            width: 100%;
+            max-width: 600px;
+            padding: 15px;
+            border: 2px solid rgba(255,105,180,0.4);
+            border-radius: 20px;
+            background: rgba(255,255,255,0.8);
+            color: #8b0000;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .bucket-list-items {
+            display: grid;
+            gap: 15px;
+        }
+
+        .bucket-item {
+            background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,182,193,0.3));
+            padding: 20px;
+            border-radius: 20px;
+            border-left: 5px solid #ff1493;
+            color: #8b0000;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .bucket-item:hover {
+            transform: translateX(10px) scale(1.02);
+            box-shadow: 0 8px 20px rgba(255,20,147,0.3);
+        }
+
+        .bucket-item-check {
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .bucket-item-check:hover {
+            transform: scale(1.2);
+        }
+
+        .surprise-mode-section {
+            background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(135,206,235,0.3));
+            backdrop-filter: blur(25px);
+            border-radius: 30px;
+            padding: 40px;
+            margin: 40px 0;
+            border: 3px solid rgba(255,255,255,0.4);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        .surprise-controls {
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        .surprise-btn {
+            background: linear-gradient(45deg, #ff1493, #87ceeb, #ff69b4);
+            background-size: 200% 200%;
+            animation: gradientShift 3s ease infinite;
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            border-radius: 30px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 25px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 25px rgba(255,20,147,0.4);
+        }
+
+        .surprise-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 35px rgba(255,20,147,0.6);
+        }
+
+        .surprise-input-section {
+            margin-top: 20px;
+        }
+
+        .surprise-input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid rgba(135,206,235,0.5);
+            border-radius: 20px;
+            background: rgba(255,255,255,0.8);
+            color: #8b0000;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .surprise-display {
+            background: linear-gradient(135deg, #ff1493, #87ceeb);
+            color: white;
+            padding: 30px;
+            border-radius: 25px;
+            margin-top: 30px;
+            font-size: 1.3rem;
+            line-height: 1.6;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            display: none;
+            animation: surpriseReveal 0.8s ease-out;
+        }
+
+        /* NEW VIDEO STYLES */
+        .video-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .video-upload-container {
+            display: inline-block;
+            position: relative;
+        }
+
+        .video-upload-btn {
+            background: linear-gradient(45deg, #87ceeb, #ff69b4);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .video-upload-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(135,206,235,0.4);
+        }
+
+        #videoInput {
+            display: none;
+        }
+
+        .video-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .video-item {
+            background: rgba(255,255,255,0.9);
+            border-radius: 20px;
+            padding: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .video-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 12px 30px rgba(255,20,147,0.3);
+        }
+
+        .video-player {
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            background: #000;
+            margin-bottom: 10px;
+        }
+
+        .video-player video {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            display: block;
+        }
+
+        .video-info {
+            color: #8b0000;
+            padding: 10px;
+        }
+
+        .video-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .video-date {
+            font-size: 0.9rem;
+            color: #ff1493;
+        }
+
+        .delete-video-btn {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .delete-video-btn:hover {
+            background: #ff5252;
+            transform: scale(1.05);
+        }
+
+        .video-surprise-display {
+            margin-top: 20px;
+        }
+
+        .video-surprise-display video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+        }
+
+        .upload-progress {
+            margin-top: 10px;
+            padding: 10px;
+            background: rgba(255,255,255,0.8);
+            border-radius: 15px;
+            color: #8b0000;
+            display: none;
+        }
+
+        .confetti {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        .confetti-piece {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #ff1493;
+            animation: confettiFall 3s linear forwards;
+        }
+
+        @keyframes confettiFall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        .anniversary-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(135deg, #ff1493, #87ceeb, #ff69b4);
+            color: white;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+            z-index: 10000;
+            text-align: center;
+            max-width: 500px;
+            animation: popupBounce 1s ease-out;
+            border: 4px solid white;
+        }
+
+        @keyframes popupBounce {
+            0% { transform: translate(-50%, -50%) scale(0) rotate(-180deg); opacity: 0; }
+            50% { transform: translate(-50%, -50%) scale(1.1) rotate(0deg); opacity: 1; }
+            100% { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 1; }
+        }
+
+        .popup-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+        }
+
+        .popup-close-btn {
+            background: white;
+            color: #ff1493;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 20px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .popup-close-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+        }
+
+        @keyframes surpriseReveal {
+            0% { transform: scale(0.8) rotate(-5deg); opacity: 0; }
+            100% { transform: scale(1) rotate(0deg); opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 { font-size: 3rem; }
+            .header .subtitle { font-size: 1.4rem; }
+            .header .time-summary { font-size: 1.1rem; }
+            .timeline::after { left: 31px; }
+            .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
+            .timeline-item::after { left: 21px; }
+            .timeline-item:nth-child(even) { left: 0%; }
+            .timeline-item:nth-child(even)::after { left: 21px; }
+            .counter-grid { grid-template-columns: repeat(2, 1fr); }
+            .quote-text { font-size: 1.6rem; }
+            .video-gallery { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-emojis" id="floating-emojis"></div>
+    <div class="heart-unlock" onclick="showSecretMessage()">💖</div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Happy Anniversary My Luv 💕</h1>
+            <div class="subtitle">One amazing year of craziness, baddieness and filled with luv</div>
+            <div class="time-summary">It has been <span id="totalHours">9497</span> hours ⏳, <span id="totalMinutes">569829</span> minutes 🕰️, and for love ♾️ infinity</div>
+        </div>
+
+        <div class="live-counter">
+            <div class="counter-title">💖 Our Love Counter 💖</div>
+            <div class="counter-grid">
+                <div class="counter-item">
+                    <span class="counter-number" id="liveDays">365</span>
+                    <span class="counter-label">📅 Days</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-number" id="liveHours">8760</span>
+                    <span class="counter-label">⏰ Hours</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-number" id="liveMinutes">525600</span>
+                    <span class="counter-label">⏱️ Minutes</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-number">∞</span>
+                    <span class="counter-label">💖 Love</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-section">
+            <h2 class="timeline-title">🌟 Our Amazing Journey 🌟</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">23rd July 2024 💫</div>
+                        <div class="timeline-text">The day it all started - destiny brought us together, it all started from that party! </div>
+                        <div class="notes-section">
+                            <textarea class="note-input" placeholder="Add your special memory here..." data-milestone="start"></textarea>
+                            <button class="save-note-btn" onclick="saveNote('start')">Save Memory</button>
+                            <div class="saved-notes" id="notes-start"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">28th July 2024 💋</div>
+                        <div class="timeline-text">Our first kiss - the moment that changed everything forever, cause I knew I bagged you</div>
+                        <div class="notes-section">
+                            <textarea class="note-input" placeholder="Add your special memory here..." data-milestone="first-kiss"></textarea>
+                            <button class="save-note-btn" onclick="saveNote('first-kiss')">Save Memory</button>
+                            <div class="saved-notes" id="notes-first-kiss"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">29th August 2024 ❤️</div>
+                        <div class="timeline-text">The day we said I love you... the day of my life I bagged you, baddie and everything changed, i became the luckiest  🫶</div>
+                        <div class="notes-section">
+                            <textarea class="note-input" placeholder="Add your special memory here..." data-milestone="i-love-you"></textarea>
+                            <button class="save-note-btn" onclick="saveNote('i-love-you')">Save Memory</button>
+                            <div class="saved-notes" id="notes-i-love-you"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">First Stay Over 🏠</div>
+                        <div class="timeline-text">Our first night together </div>
+                        <div class="notes-section">
+                            <textarea class="note-input" placeholder="Add your special memory here..." data-milestone="first-stay"></textarea>
+                            <button class="save-note-btn" onclick="saveNote('first-stay')">Save Memory</button>
+                            <div class="saved-notes" id="notes-first-stay"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">First Valentine's 🌹</div>
+                        <div class="timeline-text">Our Valentine's Day celebration</div>
+                        <div class="notes-section">
+                            <textarea class="note-input" placeholder="Add your special memory here..." data-milestone="valentine"></textarea>
+                            <button class="save-note-btn" onclick="saveNote('valentine')">Save Memory</button>
+                            <div class="saved-notes" id="notes-valentine"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">The Parties 🎉</div>
+                        <div class="timeline-text">The party, where I am a stalker for you because you are the hottest girl at the party!</div>
+                        <div class="notes-section">
+                            <textarea class="note-input" placeholder="Add your special memory here..." data-milestone="party"></textarea>
+                            <button class="save-note-btn" onclick="saveNote('party')">Save Memory</button>
+                            <div class="saved-notes" id="notes-party"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">The Adventure 🌍</div>
+                        <div class="timeline-text">Our adventures - Marathon, Okhla Bird, Safdarjung, Cycling, and every moment with you is an adventure </div>
+                        <div class="notes-section">
+                            <textarea class="note-input" placeholder="Add your special memory here..." data-milestone="adventure"></textarea>
+                            <button class="save-note-btn" onclick="saveNote('adventure')">Save Memory</button>
+                            <div class="saved-notes" id="notes-adventure"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">The Laughs 😂</div>
+                        <div class="timeline-text">All those moments when we couldn't stop laughing</div>
+                        <div class="notes-section">
+                            <textarea class="note-input" placeholder="Add your special memory here..." data-milestone="laughs"></textarea>
+                            <button class="save-note-btn" onclick="saveNote('laughs')">Save Memory</button>
+                            <div class="saved-notes" id="notes-laughs"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">The Talks 🌙</div>
+                        <div class="timeline-text">Those deep conversations that connected our souls</div>
+                        <div class="notes-section">
+                            <textarea class="note-input" placeholder="Add your special memory here..." data-milestone="talks"></textarea>
+                            <button class="save-note-btn" onclick="saveNote('talks')">Save Memory</button>
+                            <div class="saved-notes" id="notes-talks"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quote-section">
+            <div class="quote-text">
+                "You understand me so well, and I feel so safe with you. I truly feel love, and I am so glad to be experiencing life with you. 365 days ago, I started loving you, and today I love you 365 times more— every day for something new, something different, and something forever." 💖
+            </div>
+        </div>
+
+        <div class="polaroid-gallery">
+            <h2 class="gallery-title">📸 Memories 📸</h2>
+            <div class="polaroid-grid" id="polaroid-grid">
+                <!-- Polaroids will be added here by JavaScript -->
+            </div>
+        </div>
+
+        <div class="bucket-list-section">
+            <h2 class="gallery-title">🌟 Our Future Bucket List 🌟</h2>
+            <div class="bucket-list-container">
+                <div class="bucket-list-input-section">
+                    <textarea class="bucket-item-input" placeholder="What do we want to do together next year?" id="bucketInput"></textarea>
+                    <button class="save-note-btn" onclick="addBucketItem()">Add to List ✨</button>
+                </div>
+                <div class="bucket-list-items" id="bucketList"></div>
+            </div>
+        </div>
+
+        <div class="surprise-mode-section">
+            <h2 class="gallery-title">💫 Surprise Mode 💫</h2>
+            <div class="surprise-controls">
+                <button class="surprise-btn" onclick="showRandomSurprise()">✨ Random Memory ✨</button>
+                <div class="surprise-input-section">
+                    <textarea class="surprise-input" placeholder="Write a surprise message for each other..." id="surpriseInput"></textarea>
+                    <button class="save-note-btn" onclick="saveSurpriseMessage()">Save Surprise 💝</button>
+                    
+                    <!-- Updated Video Section -->
+                    <div class="video-section">
+                        <div class="video-upload-container">
+                            <input type="file" id="videoInput" accept="video/*" multiple>
+                            <button class="video-upload-btn" onclick="document.getElementById('videoInput').click()">
+                                📹 Add Surprise Video
+                            </button>
+                        </div>
+                        <div class="upload-progress" id="uploadProgress"></div>
+                        
+                        <!-- Video Gallery -->
+                        <div class="video-gallery" id="videoGallery"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="surprise-display" id="surpriseDisplay"></div>
+        </div>
+    </div>
+
+    <div class="music-controls">
+        <button class="music-btn" onclick="toggleMusic()" id="musicBtn">🎵</button>
+    </div>
+
+    <div class="secret-message" id="secretMessage">
+        <h3>💖 Secret Message in a Bottle 💖</h3>
+        <p>"Every day with you feels like discovering a new constellation of happiness. You're my favorite adventure, my safest harbor, and my greatest love story. Here's to forever being crazy and baddie together! 🌟💕"</p>
+        <button onclick="closeSecretMessage()" style="background: white; color: #ff1493; border: none; padding: 10px 20px; border-radius: 15px; margin-top: 15px; cursor: pointer; font-weight: bold;">Close 💖</button>
+    </div>
+
+    <div class="anniversary-popup" id="anniversaryPopup">
+        <div class="popup-title">Happy Anniversary Ms. Keeper 🎉</div>
+        <p style="font-size: 1.3rem; margin-bottom: 15px;">Happy Anniversary meri Jaan! 💖</p>
+        <button class="popup-close-btn" onclick="closeAnniversaryPopup()">Let's Celebrate Us! 🥳</button>
+    </div>
+
+    <div class="confetti" id="confetti"></div>
+
+    <audio id="backgroundMusic" loop>
+        <source src="until-i-found-you.mp3" type="audio/mpeg">
+        <source src="until-i-found-you.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Enhanced floating emojis with more variety
+        const emojis = ['💕', '💖', '💗', '💘', '💙', '💜', '🤍', '❤️', '🧡', '💛', '💚', '💙', '💜', '🤎', '🖤', '🤍', '💋', '🌹', '🌺', '🌸', '🌼', '🌻', '🦋', '✨', '⭐', '🌟', '💫', '🎀', '🎈', '🎉', '🎊', '🥰', '😍', '🤩', '😘'];
+
+        // Create enhanced floating emojis
+        function createFloatingEmoji() {
+            const emoji = document.createElement('div');
+            emoji.className = 'emoji';
+            emoji.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+            emoji.style.left = Math.random() * 100 + 'vw';
+            emoji.style.animationDelay = Math.random() * 2 + 's';
+            emoji.style.animationDuration = (Math.random() * 4 + 8) + 's';
+            document.getElementById('floating-emojis').appendChild(emoji);
+
+            setTimeout(() => {
+                if (emoji.parentNode) {
+                    emoji.remove();
+                }
+            }, 12000);
+        }
+
+        // Create emojis more frequently for extra magic
+        setInterval(createFloatingEmoji, 600);
+
+        // Live counter functionality - accurate to August 29th, 12:00 AM
+        function updateLiveCounter() {
+            const startDate = new Date('2024-08-29T00:00:00'); // August 29th, 12:00 AM
+            const now = new Date();
+            const timeDiff = now - startDate;
+            
+            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor(timeDiff / (1000 * 60 * 60));
+            const minutes = Math.floor(timeDiff / (1000 * 60));
+            
+            document.getElementById('liveDays').textContent = days;
+            document.getElementById('liveHours').textContent = hours.toLocaleString();
+            document.getElementById('liveMinutes').textContent = minutes.toLocaleString();
+            document.getElementById('totalHours').textContent = hours.toLocaleString();
+            document.getElementById('totalMinutes').textContent = minutes.toLocaleString();
+        }
+
+        // Update counter every minute
+        updateLiveCounter();
+        setInterval(updateLiveCounter, 60000);
+
+        // Initialize storage variables
+        let savedNotes = JSON.parse(localStorage.getItem('anniversaryNotes') || '{}');
+        let bucketList = JSON.parse(localStorage.getItem('bucketList') || '[]');
+        let surpriseMessages = JSON.parse(localStorage.getItem('surpriseMessages') || '[]');
+        let surpriseVideos = JSON.parse(localStorage.getItem('surpriseVideos') || '[]');
+
+        // Page load - show anniversary popup and confetti
+        window.addEventListener('load', () => {
+            createConfetti();
+            showAnniversaryPopup();
+            updateLiveCounter();
+            
+            // Load saved data
+            Object.keys(savedNotes).forEach(milestone => {
+                displayNotes(milestone);
+            });
+            displayBucketList();
+            displayVideos();
+            
+            // Setup video input
+            document.getElementById('videoInput').addEventListener('change', handleVideoUpload);
+        });
+
+        // Create confetti effect
+        function createConfetti() {
+            const confettiContainer = document.getElementById('confetti');
+            const colors = ['#ff1493', '#87ceeb', '#ff69b4', '#ffc0cb', '#ff6347', '#ffd700', '#98fb98'];
+            
+            for (let i = 0; i < 150; i++) {
+                setTimeout(() => {
+                    const confettiPiece = document.createElement('div');
+                    confettiPiece.className = 'confetti-piece';
+                    confettiPiece.style.left = Math.random() * 100 + '%';
+                    confettiPiece.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    confettiPiece.style.animationDelay = Math.random() * 2 + 's';
+                    confettiPiece.style.animationDuration = (Math.random() * 2 + 3) + 's';
+                    confettiContainer.appendChild(confettiPiece);
+                    
+                    setTimeout(() => confettiPiece.remove(), 5000);
+                }, i * 30);
+            }
+        }
+
+        // Anniversary popup
+        function showAnniversaryPopup() {
+            document.getElementById('anniversaryPopup').style.display = 'block';
+        }
+
+        function closeAnniversaryPopup() {
+            document.getElementById('anniversaryPopup').style.display = 'none';
+        }
+
+        // ENHANCED VIDEO FUNCTIONALITY
+        function handleVideoUpload(event) {
+            const files = event.target.files;
+            const progressDiv = document.getElementById('uploadProgress');
+            
+            if (files.length === 0) return;
+            
+            progressDiv.style.display = 'block';
+            progressDiv.innerHTML = '📹 Processing videos...';
+            
+            let processed = 0;
+            
+            Array.from(files).forEach((file, index) => {
+                if (file && file.type.startsWith('video/')) {
+                    // Check file size (limit to 50MB for browser storage)
+                    if (file.size > 50 * 1024 * 1024) {
+                        alert(`${file.name} is too large! Please use videos under 50MB.`);
+                        processed++;
+                        if (processed === files.length) {
+                            finishUpload();
+                        }
+                        return;
+                    }
+                    
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        const videoData = {
+                            id: Date.now() + index,
+                            src: e.target.result,
+                            name: file.name,
+                            date: new Date().toLocaleDateString(),
+                            time: new Date().toLocaleTimeString(),
+                            size: (file.size / (1024 * 1024)).toFixed(2) + ' MB'
+                        };
+                        
+                        surpriseVideos.push(videoData);
+                        processed++;
+                        
+                        progressDiv.innerHTML = `📹 Processing ${processed}/${files.length} videos...`;
+                        
+                        if (processed === files.length) {
+                            localStorage.setItem('surpriseVideos', JSON.stringify(surpriseVideos));
+                            finishUpload();
+                        }
+                    };
+                    
+                    reader.onerror = function() {
+                        alert(`Failed to read ${file.name}`);
+                        processed++;
+                        if (processed === files.length) {
+                            finishUpload();
+                        }
+                    };
+                    
+                    reader.readAsDataURL(file);
+                } else {
+                    alert(`${file.name} is not a video file!`);
+                    processed++;
+                    if (processed === files.length) {
+                        finishUpload();
+                    }
+                }
+            });
+            
+            function finishUpload() {
+                progressDiv.innerHTML = '✅ Videos uploaded successfully! 💖';
+                setTimeout(() => {
+                    progressDiv.style.display = 'none';
+                    document.getElementById('videoInput').value = '';
+                    displayVideos();
+                }, 2000);
+            }
+        }
+
+        // Display videos in gallery
+        function displayVideos() {
+            const gallery = document.getElementById('videoGallery');
+            
+            if (surpriseVideos.length === 0) {
+                gallery.innerHTML = '<p style="color: #ff1493; padding: 20px;">No videos yet! Add your special moments above 📹💕</p>';
+                return;
+            }
+            
+            gallery.innerHTML = surpriseVideos.map(video => `
+                <div class="video-item">
+                    <div class="video-player">
+                        <video controls>
+                            <source src="${video.src}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-title">💝 ${video.name}</div>
+                        <div class="video-date">📅 ${video.date} at ${video.time}</div>
+                        <div class="video-date">📁 Size: ${video.size}</div>
+                        <button class="delete-video-btn" onclick="deleteVideo(${video.id})">
+                            🗑️ Remove
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Delete video function
+        function deleteVideo(videoId) {
+            if (confirm('Are you sure you want to delete this video? 💔')) {
+                surpriseVideos = surpriseVideos.filter(v => v.id !== videoId);
+                localStorage.setItem('surpriseVideos', JSON.stringify(surpriseVideos));
+                displayVideos();
+            }
+        }
+
+        // Enhanced surprise mode with video support
+        function showRandomSurprise() {
+            const display = document.getElementById('surpriseDisplay');
+            
+            // Combine different types of content
+            let allSurprises = [];
+            
+            // Add saved surprise messages
+            allSurprises = allSurprises.concat(surpriseMessages.map(msg => ({
+                type: 'message',
+                content: msg.text,
+                author: msg.author,
+                date: msg.date
+            })));
+            
+            // Add videos as surprises
+            allSurprises = allSurprises.concat(surpriseVideos.map(video => ({
+                type: 'video',
+                content: video,
+                author: 'Our Memories'
+            })));
+            
+            // Add some default romantic surprises
+            const defaultSurprises = [
+                { type: 'memory', content: 'Remember when we got lost on that road trip and it turned into the best adventure ever? 🗺️💕' },
+                { type: 'joke', content: 'You still owe me a back massage from that bet you lost! 😄' },
+                { type: 'love', content: 'I love how you always know exactly what to say to make me smile 😊' },
+                { type: 'future', content: 'I can\'t wait to travel the world with you by my side ✈️🌍' },
+                { type: 'silly', content: 'You\'re the only person who can make me laugh until my stomach hurts! 😂' }
+            ];
+            
+            if (allSurprises.length === 0) {
+                allSurprises = defaultSurprises;
+            } else {
+                allSurprises = allSurprises.concat(defaultSurprises);
+            }
+            
+            const randomSurprise = allSurprises[Math.floor(Math.random() * allSurprises.length)];
+            
+            if (randomSurprise.type === 'video') {
+                display.innerHTML = `
+                    <div style="font-size: 2rem; margin-bottom: 15px;">🎬💖</div>
+                    <div style="margin-bottom: 15px;">A special video memory!</div>
+                    <div class="video-surprise-display">
+                        <video controls autoplay style="width: 100%; max-width: 600px; border-radius: 20px;">
+                            <source src="${randomSurprise.content.src}" type="video/mp4">
+                        </video>
+                    </div>
+                    <div style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">
+                        📅 ${randomSurprise.content.date} - ${randomSurprise.content.name}
+                    </div>
+                `;
+            } else {
+                display.innerHTML = `
+                    <div style="font-size: 2rem; margin-bottom: 15px;">
+                        ${randomSurprise.type === 'message' ? '💌' : 
+                          randomSurprise.type === 'memory' ? '📸' :
+                          randomSurprise.type === 'joke' ? '😄' :
+                          randomSurprise.type === 'love' ? '💖' :
+                          randomSurprise.type === 'future' ? '🌟' : '😊'}
+                    </div>
+                    <div>${randomSurprise.content}</div>
+                    ${randomSurprise.author ? `<div style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">- ${randomSurprise.author}</div>` : ''}
+                    ${randomSurprise.date ? `<div style="margin-top: 5px; font-size: 0.8rem; opacity: 0.6;">📅 ${randomSurprise.date}</div>` : ''}
+                `;
+            }
+            
+            display.style.display = 'block';
+            
+            // Add sparkle effects
+            for (let i = 0; i < 15; i++) {
+                setTimeout(() => createClickEffect(Math.random() * window.innerWidth, Math.random() * window.innerHeight), i * 100);
+            }
+        }
+
+        function saveNote(milestone) {
+            const textarea = document.querySelector(`textarea[data-milestone="${milestone}"]`);
+            const noteText = textarea.value.trim();
+            
+            if (noteText) {
+                if (!savedNotes[milestone]) {
+                    savedNotes[milestone] = [];
+                }
+                
+                savedNotes[milestone].push({
+                    text: noteText,
+                    date: new Date().toLocaleDateString(),
+                    time: new Date().toLocaleTimeString()
+                });
+                
+                localStorage.setItem('anniversaryNotes', JSON.stringify(savedNotes));
+                textarea.value = '';
+                displayNotes(milestone);
+                
+                // Success animation
+                const btn = textarea.nextElementSibling;
+                btn.textContent = 'Saved! 💖';
+                btn.style.background = 'linear-gradient(45deg, #4CAF50, #45a049)';
+                setTimeout(() => {
+                    btn.textContent = 'Save Memory';
+                    btn.style.background = 'linear-gradient(45deg, #ff1493, #87ceeb)';
+                }, 2000);
+            }
+        }
+
+        function displayNotes(milestone) {
+            const container = document.getElementById(`notes-${milestone}`);
+            if (savedNotes[milestone]) {
+                container.innerHTML = savedNotes[milestone].map(note => 
+                    `<div class="saved-note">
+                        <div style="font-size: 0.8rem; color: #ff1493; margin-bottom: 5px;">
+                            ${note.date} at ${note.time}
+                        </div>
+                        ${note.text}
+                    </div>`
+                ).join('');
+            }
+        }
+
+        // Music functionality
+        let musicPlaying = false;
+        function toggleMusic() {
+            const music = document.getElementById('backgroundMusic');
+            const btn = document.getElementById('musicBtn');
+            
+            if (musicPlaying) {
+                music.pause();
+                btn.textContent = '🎵';
+                musicPlaying = false;
+            } else {
+                music.play().catch(e => console.log('Music play failed:', e));
+                btn.textContent = '🎶';
+                musicPlaying = true;
+            }
+        }
+
+        // Secret message functionality
+        function showSecretMessage() {
+            document.getElementById('secretMessage').style.display = 'block';
+            // Add sparkle effects
+            for (let i = 0; i < 20; i++) {
+                setTimeout(() => createClickEffect(Math.random() * window.innerWidth, Math.random() * window.innerHeight), i * 100);
+            }
+        }
+
+        function closeSecretMessage() {
+            document.getElementById('secretMessage').style.display = 'none';
+        }
+
+        // Bucket List Functionality
+        function addBucketItem() {
+            const input = document.getElementById('bucketInput');
+            const itemText = input.value.trim();
+            
+            if (itemText) {
+                const newItem = {
+                    id: Date.now(),
+                    text: itemText,
+                    completed: false,
+                    date: new Date().toLocaleDateString()
+                };
+                
+                bucketList.push(newItem);
+                localStorage.setItem('bucketList', JSON.stringify(bucketList));
+                input.value = '';
+                displayBucketList();
+            }
+        }
+
+        function displayBucketList() {
+            const container = document.getElementById('bucketList');
+            container.innerHTML = bucketList.map(item => 
+                `<div class="bucket-item ${item.completed ? 'completed' : ''}">
+                    <span class="bucket-item-check" onclick="toggleBucketItem(${item.id})">
+                        ${item.completed ? '✅' : '⭐'}
+                    </span>
+                    <div style="flex: 1;">
+                        <div style="font-weight: bold;">${item.text}</div>
+                        <div style="font-size: 0.9rem; color: #ff1493; margin-top: 5px;">Added on ${item.date}</div>
+                    </div>
+                </div>`
+            ).join('');
+        }
+
+        function toggleBucketItem(id) {
+            const item = bucketList.find(item => item.id === id);
+            if (item) {
+                item.completed = !item.completed;
+                localStorage.setItem('bucketList', JSON.stringify(bucketList));
+                displayBucketList();
+            }
+        }
+
+        // Surprise Message Functionality
+        function saveSurpriseMessage() {
+            const input = document.getElementById('surpriseInput');
+            const messageText = input.value.trim();
+            
+            if (messageText) {
+                const newMessage = {
+                    id: Date.now(),
+                    text: messageText,
+                    date: new Date().toLocaleDateString(),
+                    author: 'You' // You could add logic to distinguish between partners
+                };
+                
+                surpriseMessages.push(newMessage);
+                localStorage.setItem('surpriseMessages', JSON.stringify(surpriseMessages));
+                input.value = '';
+                
+                // Show success feedback
+                const btn = input.nextElementSibling;
+                btn.textContent = 'Saved! 💖';
+                btn.style.background = 'linear-gradient(45deg, #4CAF50, #45a049)';
+                setTimeout(() => {
+                    btn.textContent = 'Save Surprise 💝';
+                    btn.style.background = 'linear-gradient(45deg, #ff1493, #87ceeb)';
+                }, 2000);
+            }
+        }
+
+        // Click effects
+        function createClickEffect(x, y) {
+            const effects = ['💖', '✨', '🌟', '💫', '🎉', '💕', '🌹', '🦋'];
+            const effect = document.createElement('div');
+            effect.innerHTML = effects[Math.floor(Math.random() * effects.length)];
+            effect.style.position = 'fixed';
+            effect.style.left = x + 'px';
+            effect.style.top = y + 'px';
+            effect.style.pointerEvents = 'none';
+            effect.style.zIndex = '10000';
+            effect.style.fontSize = '2rem';
+            effect.style.animation = 'clickEffect 1.5s ease-out forwards';
+            document.body.appendChild(effect);
+
+            setTimeout(() => effect.remove(), 1500);
+        }
